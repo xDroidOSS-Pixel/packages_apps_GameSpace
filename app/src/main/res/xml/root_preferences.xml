@@ -34,13 +34,21 @@
 
         <ListPreference
             android:defaultValue="0"
+            android:entries="@array/in_game_calls_entries"
+            android:entryValues="@array/in_game_calls_values"
+            android:key="gamespace_calls_mode"
+            android:summary="%s"
+            android:title="@string/in_game_calls_title" />
+
+        <ListPreference
+            android:defaultValue="0"
             android:entries="@array/ringer_mode_entries"
             android:entryValues="@array/ringer_mode_values"
             android:key="gamespace_ringer_mode"
             android:summary="%s"
             android:title="@string/ringer_mode_title" />
 
-        <com.evolution.settings.preference.SystemSettingSwitchPreference
+        <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="gamespace_suppress_fullscreen_intent"
             android:summary="@string/suppress_fullscreen_intent_summary"
@@ -63,7 +71,7 @@
             android:summary="@string/stay_awake_summary"
             android:title="@string/stay_awake_title" />
 
-        <com.evolution.settings.preference.CustomSeekBarPreference
+        <com.xd.mnmlist.preferences.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
             android:defaultValue="75"
